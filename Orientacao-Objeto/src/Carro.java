@@ -1,4 +1,4 @@
-public class Carro {
+class Carro {
     
     String cor;
     String modelo;
@@ -6,19 +6,20 @@ public class Carro {
 
     //contrutor aqui
     //sobrecarga de contrutor
-    Carro (){
+    Carro() {
 
     }
 
-    Carro (String cor, String modelo, int capacidadeTanque){
+    Carro(String cor, String modelo, int capacidadeTanque) {
         //colocando valores nos atributos
         this.cor = cor;// this tem relação com o objeto, diferencia o que pertence ao objeto
         this.modelo = modelo;
         this.capacidadeTanque = capacidadeTanque;
 
-    }
+    } 
+    // get e set tanque
 
-    void setCor(String cor){
+    void setCor(String cor) {
         this.cor = cor;
     }
 
@@ -26,15 +27,14 @@ public class Carro {
         return cor;
     }
 
-    void setModelo(){
+    void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
     String getModelo(){
         return modelo;
     }
-
-    // get e set tanque
+    
     void setCapacidadeTanque (int capacidadeTanque){
         this.capacidadeTanque = capacidadeTanque;
     }
